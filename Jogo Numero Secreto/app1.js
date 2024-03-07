@@ -23,7 +23,7 @@ function GerarNumeroAleatorio ()
 {
     let LimparListadeNumerosGerados = ListaNumerosGerados.length
    if (LimparListadeNumerosGerados == 3) {ListaNumerosGerados = []}
-    let AleatorioGerado = parseInt(Math.random () * 30 + 1)
+    let AleatorioGerado = parseInt(Math.random () * 50 + 1)
    if (ListaNumerosGerados.includes (AleatorioGerado)) {return GerarNumeroAleatorio ()}
    else {ListaNumerosGerados.push (AleatorioGerado); console.log (ListaNumerosGerados); return AleatorioGerado}
 
